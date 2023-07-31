@@ -12,7 +12,7 @@ git remote add origin https://github.com/nutshell522/flex_frontend.site.git
 git remote -v
 
 5.確認沒問題，設定遠程資料庫金鑰
-git remote set-url origin https://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@github.com/nutshell522/flex_frontend.site.git
+git remote set-url origin https://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@github.com/nutshell522/flex_frontend.site.git
 
 6.再次 git remote -v 確認是不是有改變
 
