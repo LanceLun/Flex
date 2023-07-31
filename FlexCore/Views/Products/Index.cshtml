@@ -1,0 +1,70 @@
+﻿@model IEnumerable<FlexCore.Models.EFModels.Products>
+
+@section Styles{
+    <style>
+        .card img {
+            height: 270px;
+            width: 250px;
+        }
+
+        .card {
+            margin-top: 5px;
+            margin-right: 5px;
+            padding: 0;
+            border: none;
+            height: 400px;
+            width: 270px;
+        }
+    </style>
+}
+
+<div id="app">
+    <div class="row">
+        <div class="container">
+            <ul class="d-flex flex-wrap">
+                <li v-for="card in cards" :key="card.productId" class="card text-center">
+                    <a href="#" @@click=""><img :src='"Public/Img/"+card.firstImgPath' class="card-img-top mx-auto d-block" :title="card.productName"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">{{card.productName}}</h5>
+                        <span class="text-decoration-line-through" v-if="card.unitPrice!=null"> NT:{{card.unitPrice}} </span>
+                        <span v-if="card.unitPrice!=null"> 活動價 </span>
+                        <span> NT:{{card.salesPrice}} </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://unpkg.com/vue@3.2.36/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var baseAddress = "https://localhost:7183/";
+        var vueApp = {
+            data() {
+                return {
+                    cards: []
+                }
+            },
+            mounted: function () {
+                let _this = this;
+                _this.filterProducts();
+            },
+            methods: {
+                filterProducts: function () {
+                    let _this = this;
+                    var request = {};
+
+                    axios.post(`${baseAddress}api/Products/GetAll`).then(response => {
+                        //console.log(JSON.stringify(response.data));
+                        _this.cards = response.data;
+                    }).catch(error => {
+                        alert(error);
+                    });
+                }
+            }
+        };
+        var app = Vue.createApp(vueApp).mount("#app");
+    </script>
+}
