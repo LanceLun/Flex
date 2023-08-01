@@ -29,11 +29,52 @@ namespace FlexCoreService.Controllers
         }
 
         // POST: api/Products/
-        [HttpPost("GetAll")]
+        [HttpPost]
         public async Task<ActionResult<IEnumerable<ProductCardVM>>> GetAllProducts()
         {
             var server = new ProductService(_repo);
             var products = server.SearchProducts().Select(p => p.ToCardVM()).ToList();
+            if (products.Count == 0)
+            {
+                return NotFound();
+            }
+            return products;
+        }
+
+        // POST: api/Products
+        [HttpPost("Men")]
+        public async Task<ActionResult<IEnumerable<ProductCardVM>>> GetMenProducts()
+        {
+            string salesName = "男";
+            var server = new ProductService(_repo);
+            var products = server.SearchSalesProducts(salesName).Select(p => p.ToCardVM()).ToList();
+            if (products.Count == 0)
+            {
+                return NotFound();
+            }
+            return products;
+        }
+        // POST: api/Products
+        [HttpPost("Women")]
+        public async Task<ActionResult<IEnumerable<ProductCardVM>>> GetWomenProducts()
+        {
+            string salesName = "女";
+            var server = new ProductService(_repo);
+            var products = server.SearchSalesProducts(salesName).Select(p => p.ToCardVM()).ToList();
+            if (products.Count == 0)
+            {
+                return NotFound();
+            }
+            return products;
+        }
+
+        // POST: api/Products
+        [HttpPost("Kid")]
+        public async Task<ActionResult<IEnumerable<ProductCardVM>>> GetKidProducts()
+        {
+            string salesName = "童";
+            var server = new ProductService(_repo);
+            var products = server.SearchSalesProducts(salesName).Select(p => p.ToCardVM()).ToList();
             if (products.Count == 0)
             {
                 return NotFound();
@@ -104,18 +145,18 @@ namespace FlexCoreService.Controllers
 
         // POST: api/Products
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Products>> PostProducts(Products products)
-        {
-            if (_db.Products == null)
-            {
-                return Problem("Entity set 'AppDbContext.Products'  is null.");
-            }
-            _db.Products.Add(products);
-            await _db.SaveChangesAsync();
+        //[HttpPost]
+        //public async Task<ActionResult<Products>> PostProducts(Products products)
+        //{
+        //    if (_db.Products == null)
+        //    {
+        //        return Problem("Entity set 'AppDbContext.Products'  is null.");
+        //    }
+        //    _db.Products.Add(products);
+        //    await _db.SaveChangesAsync();
 
-            return CreatedAtAction("GetProducts", new { id = products.ProductId }, products);
-        }
+        //    return CreatedAtAction("GetProducts", new { id = products.ProductId }, products);
+        //}
 
         // DELETE: api/Products/5
         [HttpDelete("{id}")]

@@ -4,14 +4,14 @@
     <style>
         .card img {
             height: 270px;
-            width: 250px;
+            width: 268px;
         }
 
         .card {
             margin-top: 5px;
             margin-right: 5px;
             padding: 0;
-            border: none;
+            border: 1px gray solid;
             height: 400px;
             width: 270px;
         }
@@ -56,7 +56,7 @@
                     let _this = this;
                     var request = {};
 
-                    axios.post(`${baseAddress}api/Products/GetAll`).then(response => {
+                    axios.post(`${baseAddress}api/Products`).then(response => {
                         //console.log(JSON.stringify(response.data));
                         _this.cards = response.data;
                     }).catch(error => {

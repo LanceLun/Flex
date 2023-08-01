@@ -30,5 +30,22 @@ order by p.ProductId";
             return result;
         }
 
+        public IEnumerable<ProductCardDto> SearchSalesProducts(string salesName)
+        {
+            string sql = @"select p.ProductId, p.ProductName, p.UnitPrice, p.SalesPrice,SalesCategoryName,
+MIN(pi.ImgPath) AS FirstImgPath 
+from Products as p
+join ProductImgs as pi on p.ProductId = pi.fk_ProductId
+join ProductSubCategories as ps on ps.ProductSubCategoryId=p.fk_ProductSubCategoryId
+join ProductCategories as pc on pc.ProductCategoryId=ps.fk_ProductCategoryId
+join SalesCategories as s on s.SalesCategoryId=pc.fk_SalesCategoryId
+group by p.ProductId, p.ProductName, p.UnitPrice, p.SalesPrice, p.Status, p.LogOut,SalesCategoryName
+having p.Status=0 and p.LogOut=0 and s.SalesCategoryName like '" + "%" + @salesName + "%'" + " order by p.ProductId";
+
+            using IDbConnection dbConnection = new SqlConnection(_connStr);
+            var result = dbConnection.Query<ProductCardDto>(sql, new { salesName });
+            return result;
+        }
+
     }
 }

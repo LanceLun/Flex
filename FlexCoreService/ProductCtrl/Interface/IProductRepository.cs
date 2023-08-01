@@ -5,5 +5,7 @@ namespace FlexCoreService.ProductCtrl.Interface
     public interface IProductRepository
     {
         IEnumerable<ProductCardDto> SearchProducts();
+
+        IEnumerable<ProductCardDto> SearchSalesProducts(string salesName);
     }
 }

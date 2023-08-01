@@ -19,5 +19,11 @@ namespace FlexCoreService.ProductCtrl.Service
             var products = _repo.SearchProducts();
             return products;
         }
+
+        public IEnumerable<ProductCardDto> SearchSalesProducts(string salesName)
+        {
+            var products = _repo.SearchSalesProducts(salesName);
+            return products;
+        }
     }
 }

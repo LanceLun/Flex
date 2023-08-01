@@ -164,6 +164,21 @@ namespace FlexCore.Controllers
             return View();
         }
 
+        public IActionResult IndexMen()
+        {
+            return View();
+        }
+
+        public IActionResult IndexWomen()
+        {
+            return View();
+        }
+
+        public IActionResult IndexKid()
+        {
+            return View();
+        }
+
         private bool ProductsExists(string id)
         {
             return (_context.Products?.Any(e => e.ProductId == id)).GetValueOrDefault();
