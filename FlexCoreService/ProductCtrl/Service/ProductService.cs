@@ -1,4 +1,4 @@
-﻿using FlexCoreService.Models.EFModels;
+﻿using EFModels.Models;
 using FlexCoreService.ProductCtrl.Interface;
 using FlexCoreService.ProductCtrl.Models.Dtos;
 

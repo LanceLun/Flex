@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PtvBhSwWIWcVO3Frj7ilhAfilhc/XwNFF5McCd1/9tM=",
+  "Hash": "u41zoI8Vk8eWBrG93syWDyF1r5cYJO+N102Rvgm8Y2E=",
   "Source": "FlexCore",
   "BasePath": "_content/FlexCore",
   "Mode": "Default",
@@ -3704,6 +3704,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Public\\Img\\login4.PNG"
+    },
+    {
+      "Identity": "C:\\大專FlexCore\\FlexCore\\wwwroot\\Public\\Img\\分類圖示.gif",
+      "SourceId": "FlexCore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\大專FlexCore\\FlexCore\\wwwroot\\",
+      "BasePath": "_content/FlexCore",
+      "RelativePath": "Public/Img/分類圖示.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Public\\Img\\分類圖示.gif"
     },
     {
       "Identity": "C:\\大專FlexCore\\FlexCore\\wwwroot\\Public\\Img\\講師大頭貼\\0860beaeb55e4e479ebee88b269318d1.png",

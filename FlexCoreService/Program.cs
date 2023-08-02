@@ -1,4 +1,4 @@
-using FlexCoreService.Models.EFModels;
+using EFModels.Models;
 using FlexCoreService.ProductCtrl.Infra.DPRepository;
 using FlexCoreService.ProductCtrl.Interface;
 using Microsoft.EntityFrameworkCore;

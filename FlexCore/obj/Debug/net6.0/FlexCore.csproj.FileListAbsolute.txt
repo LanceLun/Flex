@@ -500,3 +500,5 @@ C:\大專FlexCore\FlexCore\obj\Debug\net6.0\refint\FlexCore.dll
 C:\大專FlexCore\FlexCore\obj\Debug\net6.0\FlexCore.pdb
 C:\大專FlexCore\FlexCore\obj\Debug\net6.0\FlexCore.genruntimeconfig.cache
 C:\大專FlexCore\FlexCore\obj\Debug\net6.0\ref\FlexCore.dll
+C:\大專FlexCore\FlexCore\bin\Debug\net6.0\EFModels.dll
+C:\大專FlexCore\FlexCore\bin\Debug\net6.0\EFModels.pdb

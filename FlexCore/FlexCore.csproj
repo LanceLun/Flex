@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\EFModels\" />
+    <ProjectReference Include="..\EFModels\EFModels.csproj" />
   </ItemGroup>
 
 </Project>

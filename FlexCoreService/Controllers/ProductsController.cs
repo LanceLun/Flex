@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using FlexCoreService.Models.EFModels;
 using Microsoft.AspNetCore.Cors;
 using FlexCoreService.ProductCtrl.Interface;
 using FlexCoreService.ProductCtrl.Models.VM;
 using FlexCoreService.ProductCtrl.Service;
 using FlexCoreService.ProductCtrl.Exts;
+using EFModels.Models;
 
 namespace FlexCoreService.Controllers
 {
@@ -86,7 +86,7 @@ namespace FlexCoreService.Controllers
 
         // GET: api/Products
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Products>>> GetProducts()
+        public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
             if (_db.Products == null)
             {
@@ -97,7 +97,7 @@ namespace FlexCoreService.Controllers
 
         // GET: api/Products/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Products>> GetProducts(string id)
+        public async Task<ActionResult<Product>> GetProducts(string id)
         {
             if (_db.Products == null)
             {
@@ -116,7 +116,7 @@ namespace FlexCoreService.Controllers
         // PUT: api/Products/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutProducts(string id, Products products)
+        public async Task<IActionResult> PutProducts(string id, Product products)
         {
             if (id != products.ProductId)
             {

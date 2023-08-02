@@ -3779,6 +3779,20 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "EFModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.20",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.20"
+        },
+        "compile": {
+          "bin/placeholder/EFModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EFModels.dll": {}
+        }
       }
     }
   },
@@ -10767,11 +10781,17 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "EFModels/1.0.0": {
+      "type": "project",
+      "path": "../EFModels/EFModels.csproj",
+      "msbuildProject": "../EFModels/EFModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Dapper >= 2.0.143",
+      "EFModels >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.20",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.20",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.15"
@@ -10804,7 +10824,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\大專FlexCore\\EFModels\\EFModels.csproj": {
+              "projectPath": "C:\\大專FlexCore\\EFModels\\EFModels.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

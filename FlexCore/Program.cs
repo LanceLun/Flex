@@ -1,5 +1,5 @@
+using EFModels.Models;
 using FlexCore.Models;
-using FlexCore.Models.EFModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace FlexCore

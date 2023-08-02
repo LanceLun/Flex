@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexCore", "FlexCore\FlexCore.csproj", "{A6783508-D3F2-43E9-B061-1E0673296DDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexCoreService", "FlexCoreService\FlexCoreService.csproj", "{82056977-07BF-4677-B83B-6B06034F6DBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexCoreService", "FlexCoreService\FlexCoreService.csproj", "{82056977-07BF-4677-B83B-6B06034F6DBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFModels", "EFModels\EFModels.csproj", "{18F9F638-0E8B-4C4D-89EB-4254107CA105}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{82056977-07BF-4677-B83B-6B06034F6DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82056977-07BF-4677-B83B-6B06034F6DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82056977-07BF-4677-B83B-6B06034F6DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18F9F638-0E8B-4C4D-89EB-4254107CA105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18F9F638-0E8B-4C4D-89EB-4254107CA105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18F9F638-0E8B-4C4D-89EB-4254107CA105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18F9F638-0E8B-4C4D-89EB-4254107CA105}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

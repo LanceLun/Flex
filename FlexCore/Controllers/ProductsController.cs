@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EFModels.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using FlexCore.Models.EFModels;
 
 namespace FlexCore.Controllers
 {
@@ -56,7 +56,7 @@ namespace FlexCore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductId,ProductName,ProductDescription,ProductMaterial,ProductOrigin,UnitPrice,SalesPrice,StartTime,EndTime,Status,LogOut,Tag,fk_ProductSubCategoryId,CreateTime,EditTime")] Products products)
+        public async Task<IActionResult> Create([Bind("ProductId,ProductName,ProductDescription,ProductMaterial,ProductOrigin,UnitPrice,SalesPrice,StartTime,EndTime,Status,LogOut,Tag,fk_ProductSubCategoryId,CreateTime,EditTime")] Product products)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace FlexCore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("ProductId,ProductName,ProductDescription,ProductMaterial,ProductOrigin,UnitPrice,SalesPrice,StartTime,EndTime,Status,LogOut,Tag,fk_ProductSubCategoryId,CreateTime,EditTime")] Products products)
+        public async Task<IActionResult> Edit(string id, [Bind("ProductId,ProductName,ProductDescription,ProductMaterial,ProductOrigin,UnitPrice,SalesPrice,StartTime,EndTime,Status,LogOut,Tag,fk_ProductSubCategoryId,CreateTime,EditTime")] Product products)
         {
             if (id != products.ProductId)
             {
