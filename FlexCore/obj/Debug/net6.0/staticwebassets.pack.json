@@ -741,6 +741,10 @@
       "PackagePath": "staticwebassets\\Public\\Img\\講師大頭貼\\james-thornton-8VoDyBDvv0k-unsplash.jpg"
     },
     {
+      "Id": "C:\\大專FlexCore\\FlexCore\\wwwroot\\css\\ProductCard.css",
+      "PackagePath": "staticwebassets\\css\\ProductCard.css"
+    },
+    {
       "Id": "C:\\大專FlexCore\\FlexCore\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

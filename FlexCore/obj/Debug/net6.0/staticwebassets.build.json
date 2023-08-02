@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "p6XSSdaeoEaGR7h3R0TWXKAKVlT3deCAMX3qvczwb5A=",
+  "Hash": "PtvBhSwWIWcVO3Frj7ilhAfilhc/XwNFF5McCd1/9tM=",
   "Source": "FlexCore",
   "BasePath": "_content/FlexCore",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\大專FlexCore\\FlexCore\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FlexCore.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\大專FlexCore\\FlexCore\\wwwroot\\css\\ProductCard.css",
+      "SourceId": "FlexCore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\大專FlexCore\\FlexCore\\wwwroot\\",
+      "BasePath": "_content/FlexCore",
+      "RelativePath": "css/ProductCard.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\ProductCard.css"
     },
     {
       "Identity": "C:\\大專FlexCore\\FlexCore\\wwwroot\\css\\site.css",

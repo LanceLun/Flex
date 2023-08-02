@@ -41,26 +41,13 @@ namespace FlexCoreService.Controllers
             return products;
         }
 
-        // POST: api/Products
+        // POST: api/Products/Men
         [HttpPost("Men")]
         public async Task<ActionResult<IEnumerable<ProductCardVM>>> GetMenProducts()
         {
-            string salesName = "男";
+            int salesId = 1;
             var server = new ProductService(_repo);
-            var products = server.SearchSalesProducts(salesName).Select(p => p.ToCardVM()).ToList();
-            if (products.Count == 0)
-            {
-                return NotFound();
-            }
-            return products;
-        }
-        // POST: api/Products
-        [HttpPost("Women")]
-        public async Task<ActionResult<IEnumerable<ProductCardVM>>> GetWomenProducts()
-        {
-            string salesName = "女";
-            var server = new ProductService(_repo);
-            var products = server.SearchSalesProducts(salesName).Select(p => p.ToCardVM()).ToList();
+            var products = server.SearchSalesProducts(salesId).Select(p => p.ToCardVM()).ToList();
             if (products.Count == 0)
             {
                 return NotFound();
@@ -68,13 +55,27 @@ namespace FlexCoreService.Controllers
             return products;
         }
 
-        // POST: api/Products
+        // POST: api/Products/Women
+        [HttpPost("Women")]
+        public async Task<ActionResult<IEnumerable<ProductCardVM>>> GetWomenProducts()
+        {
+            int salesId = 2;
+            var server = new ProductService(_repo);
+            var products = server.SearchSalesProducts(salesId).Select(p => p.ToCardVM()).ToList();
+            if (products.Count == 0)
+            {
+                return NotFound();
+            }
+            return products;
+        }
+
+        // POST: api/Products/Kid
         [HttpPost("Kid")]
         public async Task<ActionResult<IEnumerable<ProductCardVM>>> GetKidProducts()
         {
-            string salesName = "童";
+            int salesId = 3;
             var server = new ProductService(_repo);
-            var products = server.SearchSalesProducts(salesName).Select(p => p.ToCardVM()).ToList();
+            var products = server.SearchSalesProducts(salesId).Select(p => p.ToCardVM()).ToList();
             if (products.Count == 0)
             {
                 return NotFound();

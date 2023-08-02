@@ -6,6 +6,6 @@ namespace FlexCoreService.ProductCtrl.Interface
     {
         IEnumerable<ProductCardDto> SearchProducts();
 
-        IEnumerable<ProductCardDto> SearchSalesProducts(string salesName);
+        IEnumerable<ProductCardDto> SearchSalesProducts(int salesId);
     }
 }

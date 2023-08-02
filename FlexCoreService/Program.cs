@@ -31,6 +31,7 @@ namespace FlexCoreService
 
             //DIª`¤JDapper
             builder.Services.AddScoped<IProductRepository, ProductDPRepository>();
+            builder.Services.AddScoped<ICategoryRepository, CategoryDPRepository>();
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

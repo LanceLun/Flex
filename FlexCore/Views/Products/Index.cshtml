@@ -2,19 +2,7 @@
 
 @section Styles{
     <style>
-        .card img {
-            height: 270px;
-            width: 268px;
-        }
-
-        .card {
-            margin-top: 5px;
-            margin-right: 5px;
-            padding: 0;
-            border: 1px gray solid;
-            height: 400px;
-            width: 270px;
-        }
+        
     </style>
 }
 
@@ -23,7 +11,9 @@
         <div class="container">
             <ul class="d-flex flex-wrap">
                 <li v-for="card in cards" :key="card.productId" class="card text-center">
-                    <a href="#" @@click=""><img :src='"Public/Img/"+card.firstImgPath' class="card-img-top mx-auto d-block" :title="card.productName"></a>
+                    <div class="img">
+                        <a href="#" @@click=""><img :src='"/Public/Img/"+card.firstImgPath' class="card-img-top mx-auto d-block" :title="card.productName"></a>
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">{{card.productName}}</h5>
                         <span class="text-decoration-line-through" v-if="card.unitPrice!=null"> NT:{{card.unitPrice}} </span>
