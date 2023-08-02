@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JRxxzF9dk8SALu+vYdfZnFluIHtYwC6CXRvEH7wPemzwAv61ZL3YcYY1w/vQ+sGfEp0VZd731wvaWd98HdCS9A==",
+  "dgSpecHash": "PuciGYVoptr0maJ5P0Z3/HM83OWXmUJJQJbgwgo4skqZ3+0YEz1ddlNvXkUwIPyL24px0pcoicKp3hMYeuzrgg==",
   "success": true,
-  "projectFilePath": "C:\\大專FlexCore\\EFModels\\EFModels.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\新增資料夾\\EFModels\\EFModels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

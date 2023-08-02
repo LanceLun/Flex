@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\大專FlexCore\\FlexCore\\FlexCore.csproj": {}
+    "C:\\Users\\USER\\Desktop\\新增資料夾\\FlexCore\\FlexCore.csproj": {}
   },
   "projects": {
-    "C:\\大專FlexCore\\EFModels\\EFModels.csproj": {
+    "C:\\Users\\USER\\Desktop\\新增資料夾\\EFModels\\EFModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\大專FlexCore\\EFModels\\EFModels.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\新增資料夾\\EFModels\\EFModels.csproj",
         "projectName": "EFModels",
-        "projectPath": "C:\\大專FlexCore\\EFModels\\EFModels.csproj",
+        "projectPath": "C:\\Users\\USER\\Desktop\\新增資料夾\\EFModels\\EFModels.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\大專FlexCore\\EFModels\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\新增資料夾\\EFModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -76,14 +76,14 @@
         }
       }
     },
-    "C:\\大專FlexCore\\FlexCore\\FlexCore.csproj": {
+    "C:\\Users\\USER\\Desktop\\新增資料夾\\FlexCore\\FlexCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\大專FlexCore\\FlexCore\\FlexCore.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\新增資料夾\\FlexCore\\FlexCore.csproj",
         "projectName": "FlexCore",
-        "projectPath": "C:\\大專FlexCore\\FlexCore\\FlexCore.csproj",
+        "projectPath": "C:\\Users\\USER\\Desktop\\新增資料夾\\FlexCore\\FlexCore.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\大專FlexCore\\FlexCore\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\新增資料夾\\FlexCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -101,8 +101,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\大專FlexCore\\EFModels\\EFModels.csproj": {
-                "projectPath": "C:\\大專FlexCore\\EFModels\\EFModels.csproj"
+              "C:\\Users\\USER\\Desktop\\新增資料夾\\EFModels\\EFModels.csproj": {
+                "projectPath": "C:\\Users\\USER\\Desktop\\新增資料夾\\EFModels\\EFModels.csproj"
               }
             }
           }

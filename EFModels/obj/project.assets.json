@@ -2018,11 +2018,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\大專FlexCore\\EFModels\\EFModels.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\Desktop\\新增資料夾\\EFModels\\EFModels.csproj",
       "projectName": "EFModels",
-      "projectPath": "C:\\大專FlexCore\\EFModels\\EFModels.csproj",
+      "projectPath": "C:\\Users\\USER\\Desktop\\新增資料夾\\EFModels\\EFModels.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\大專FlexCore\\EFModels\\obj\\",
+      "outputPath": "C:\\Users\\USER\\Desktop\\新增資料夾\\EFModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
